@@ -1,0 +1,20 @@
+/*
+  BODY - For general stuff that applies across all pages
+*/
+
+html{
+  background-color: #e0e0e0;
+  font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+  a{
+    text-decoration: none;
+    color: #000;  
+    @include vendor(transition, color .25s ease-in 0s);
+    &:hover{
+      color: rgba(0,0,0,.5);
+    }
+  }
+  .containment{
+    max-width: 80*$base-spacing-unit; //1440px
+    margin:0 auto;
+  }
+}

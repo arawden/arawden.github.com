@@ -1,0 +1,114 @@
+/* HOME
+
+For shit on the home page. Duh
+
+*/
+
+.Home header{
+  border: none;
+ .logo{
+  display: none; // Logo shit doesn't come up on the home page. That's what the rest of the text is for
+  }
+}
+
+.Home .content{
+  display: table;
+  height: 40*$base-spacing-unit;
+  @extend .one-whole;
+
+}
+.name{
+  display: table-cell;
+  vertical-align: middle;
+  @media only screen and (max-width: 45*$base-spacing-unit){ // 810px!
+    display: inline-block;
+  }
+  font-size: 7*$base-font-size;
+  line-height: 6*$base-font-size; 
+  @include media-query(portable){
+    font-size: 5*$base-font-size;
+    line-height: 5*$base-font-size;
+  }
+  @include media-query(palm){
+    font-size: 4*$base-font-size;
+    line-height: 4*$base-font-size;
+  }
+  @media only screen and (max-width: 20*$base-spacing-unit){
+    font-size: 3.5*$base-font-size;
+    line-height: 3.5*$base-font-size;
+  }
+  @include media-query(desk-wide){
+    font-size: 8*$base-font-size;
+    line-height: 7*$base-line-height;
+  }
+  font-weight: 900;
+}
+.person{
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 18px;
+  text-align: right;
+  @media only screen and (max-width: 45*$base-spacing-unit){
+    display: inline-block;
+    text-align: left;
+  }
+
+  .description{
+    padding-top: 2*$base-line-height;
+
+    font-size: 3*$base-font-size;
+    line-height: 3*$base-line-height;
+    @include media-query(desk-wide){
+      font-size: 3*$base-font-size;
+      line-height: 4*$base-line-height;
+    }
+    @include media-query(palm){
+      font-size: 2.5*$base-font-size;
+      line-height: 2.5*$base-font-size;
+    }
+    @media only screen and (max-width: 45*$base-spacing-unit){
+      margin: 0;
+    } 
+    font-weight: 900;
+    list-style: none;
+  }
+
+  .social{
+    padding-top: 1.5*$base-spacing-unit;
+    @include media-query(portable){
+      padding-top:$base-spacing-unit;
+    }
+    @include media-query(palm){
+      padding-top: 2*$base-spacing-unit;
+    }
+    li{
+      padding-left: 3*$base-spacing-unit;
+      @include media-query(portable){
+        font-size: 2.5*$base-font-size;
+        padding-left: 2*$base-spacing-unit;
+      }
+      @media only screen and (max-width: 45*$base-spacing-unit){
+        padding-left: 0;
+        padding-right: 3*$base-spacing-unit;
+      }
+      @include media-query(palm){
+        font-size: 2*$base-font-size;
+        padding-right: 2.5*$base-spacing-unit;
+      }
+      text-align: right;
+      
+      font-size: 3*$base-font-size;
+      a{
+        &[data-icon="G"]::before{
+          content: "\f09b";
+        }
+        &[data-icon="T"]::before{
+          content: "\f081";
+        }
+        &[data-icon="M"]::before{
+          content: "\f01c";
+        }
+      }
+    }
+  }
+}
