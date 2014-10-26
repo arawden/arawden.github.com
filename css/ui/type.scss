@@ -40,6 +40,52 @@ Typography control file for importing fonts and shit
   font-style: normal;
 }
 
+// Anon Pro
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('../fonts/AnonPro/AnonPro.eot');
+  src: local('Anonymous Pro'),
+    url('../fonts/AnonPro/AnonPro.eot') format('embedded-opentype'),
+    url('../fonts/AnonPro/AnonPro.woff') format('woff'),
+    url('../fonts/AnonPro/AnonPro.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+// Anon Pro Bold
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('../fonts/AnonPro/AnonPro-Bold.eot');
+  src: local('Anonymous Pro'),
+    url('../fonts/AnonPro/AnonPro-Bold.eot') format('embedded-opentype'),
+    url('../fonts/AnonPro/AnonPro-Bold.woff') format('woff'),
+    url('../fonts/AnonPro/AnonPro-Bold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+// Anon Pro Italic
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('../fonts/AnonPro/AnonPro-Italic.eot');
+  src: local('Anonymous Pro'),
+    url('../fonts/AnonPro/AnonPro-Italic.eot') format('embedded-opentype'),
+    url('../fonts/AnonPro/AnonPro-Italic.woff') format('woff'),
+    url('../fonts/AnonPro/AnonPro-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+// Anon Pro Bold Italic
+@font-face {
+  font-family: 'Anonymous Pro';
+  src: url('../fonts/AnonPro/AnonPro-BoldItalic.eot');
+  src: local('Anonymous Pro'),
+    url('../fonts/AnonPro/AnonPro-BoldItalic.eot') format('embedded-opentype'),
+    url('../fonts/AnonPro/AnonPro-BoldItalic.woff') format('woff'),
+    url('../fonts/AnonPro/AnonPro-BoldItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 // Font Awsome
 @font-face {
   font-family: 'Font Awesome';
@@ -52,4 +98,6 @@ Typography control file for importing fonts and shit
   font-style: normal;
 }
 
-.fa {font-family: 'Font Awesome'}
+.fira {font-family: 'Fira Sans';}
+.fa {font-family: 'Font Awesome';}
+.anon {font-family: 'Anonymous Pro';}

@@ -4,16 +4,22 @@ For shit on the home page. Duh
 
 */
 
-.Home header{
+.home header{
   border: none;
  .logo{
   display: none; // Logo shit doesn't come up on the home page. That's what the rest of the text is for
   }
 }
 
-.Home .content{
+.home .content{
   display: table;
   height: 40*$base-spacing-unit;
+  @include media-query(portable){
+    height: 30*$base-spacing-unit;
+  }
+  @media only screen and (max-width: 45*$base-spacing-unit){
+    height: 100%;
+  }
   @extend .one-whole;
 
 }

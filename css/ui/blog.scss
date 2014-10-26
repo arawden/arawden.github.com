@@ -6,8 +6,12 @@ For the Blog section
 
 .postfeed{
   margin-top: $base-spacing-unit;
+  article{
+    border-bottom: solid 3px rgba(0,0,0,.05);
+  }
 }
 
 .post .date{
-  float: right;
+  margin: -$base-spacing-unit 0 $base-spacing-unit 0;
+  font-size: 14px;
 }

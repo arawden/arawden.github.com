@@ -5,6 +5,10 @@
 html{
   background-color: #e0e0e0;
   font-family: 'Fira Sans', Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  @include vendor(font-feature-settings, 'kern' 1); 
+  @include vendor(font-feature-settings, 'liga' 1); 
+
   a{
     text-decoration: none;
     color: #000;  

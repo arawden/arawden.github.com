@@ -2,6 +2,23 @@
   Blogs have posts, so they need css. Dipshit
 */
 
-blockquote{
-  quotes: none;
+.post .content{
+  margin-top: $base-spacing-unit;
+  
+  blockquote{
+    margin: 2*$base-spacing-unit auto;
+    padding: $half-spacing-unit $base-spacing-unit 1.5*$base-spacing-unit;
+    width: 60%;
+    @include media-query(portable){
+      width: 100%;
+    }
+
+    border-left: solid 3px rgba(0,0,0,0.5);
+    quotes: none;
+    text-indent: 0;
+    cite{
+      float: right;
+      padding-top: $half-spacing-unit;
+    }
+   }
 }

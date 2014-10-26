@@ -15,6 +15,13 @@ header{
   padding: 1.5*$base-spacing-unit 0 0 0;
   font-weight: 900;
   @extend .alpha;
+  @include media-query(portable){
+    text-align: center;
+  }
+  @include media-query(palm){
+    text-align: left;
+  }
+
 }
 
 
