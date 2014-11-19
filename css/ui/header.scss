@@ -10,6 +10,9 @@ In which case I'm so sorry you have no job security
 header{
   border-bottom: solid 3px rgba(0,0,0,.1);
 }
+.night header{
+  border-color: rgba(224,224,224,.2);
+}
 
 .logo{
   padding: 1.5*$base-spacing-unit 0 0 0;
@@ -61,5 +64,41 @@ header{
         }
       }
     }
+  }
+}
+
+.toggle{
+  position: fixed;
+  top: 1.5*$base-spacing-unit;
+  right: 2*$base-spacing-unit;
+  
+  @media only screen and (max-width: 90*$base-spacing-unit){
+    top: inherit;
+    bottom: 1.5*$base-spacing-unit;
+  }
+  
+  padding: $half-spacing-unit;
+  background-color: rgba(0,0,0,.8);
+  @include vendor(transition, background-color .25s ease-in 0s);
+  &:hover{
+    cursor: pointer;
+    background-color: rgba(0,0,0,.6);
+  }
+  &:before{
+    content: "\f186";
+    font-family: "Font Awesome";
+    font-size: $base-font-size;
+    color: rgb(224,224,224);
+  }
+}
+
+.night .toggle{
+  background-color: rgba(224,224,224,.8);
+  &:hover{
+    background-color: rgba(224,224,224,.6);
+  }
+  &:before{
+    content: "\f185";
+    color: rgb(0,0,0);
   }
 }

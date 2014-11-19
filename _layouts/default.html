@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
     
     <title>{% if page.title %}{{ page.title }} | {% endif %}Avery Alexander Rawden</title>
     
-    <link rel="stylesheet" href="/css/0x7j.min.css">
+    <link rel="stylesheet" href="/css/0x7j.min.css" />
 </head>
 <body class="{{page.class}}">
 <div class="containment one-whole grid">
@@ -15,7 +15,7 @@
     <nav class="linkerino one-third portable-one-whole">
       <ul class="nav portable-one-whole">
         <li class="portable-three-tenths"><a title="Blog" href="/blog/">Blog</a></li>
-        <li class="portable-three-tenths"><a title="Experiments" href="#">Lab</a></li>
+        <li class="portable-three-tenths"><a title="Experiments" href="/lab/">Lab</a></li>
         <li class="portable-three-tenths"><a title="Who?" href="/about/">About</a></li>
       </ul>
     </nav>
@@ -24,6 +24,8 @@
     {{ content }}
   </div>
 </div>    
+<a class="fa toggle" onclick="lightswitch()"></a>
 </body>
-{%if page.title == "About" %}<script src="../js/lastfm.js"></script>{% endif %}
+<script async src="/js/modernizr.js"></script>
+<script async src="/js/0x7j.js"></script>
 </html>

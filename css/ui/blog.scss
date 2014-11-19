@@ -8,10 +8,16 @@ For the Blog section
   margin-top: $base-spacing-unit;
   article{
     border-bottom: solid 3px rgba(0,0,0,.05);
+    .post-title{
+      @extend .gamma;
+    }
   }
 }
 
 .post .date{
-  margin: -$base-spacing-unit 0 $base-spacing-unit 0;
+  margin: 0 0 $base-spacing-unit 0;
   font-size: 14px;
+}
+.night article{
+  border-color: rgba(224,224,224,.1);
 }

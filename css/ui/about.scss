@@ -3,4 +3,16 @@ For the about page
 
 duh
 */
-
+/*.about{
+  background: url('../assets/about.jpg') no-repeat fixed center center / cover transparent;
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}*/
+.banner{
+  padding-top: $base-spacing-unit;
+}
+.night .about{
+  background: #000;
+}

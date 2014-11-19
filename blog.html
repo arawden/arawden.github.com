@@ -5,10 +5,12 @@ permalink: /blog/
 ---
 <div class="postfeed">
   {% for post in site.posts %}
+  {% if post.class != "lab" %}
   <article class="post one-whole">
-    <a href="{{ post.url }}"><h3 class="post-title">{{ post.title }} </h3></a>
+    <a href="{{ post.url }}" title="{{post.title}}" class="post-title">{{ post.title }}</a>
     <p class="date">{{ post.date | date_to_long_string }}</p>
     <p class="excerpt">{{ post.summary }} </p>
   </article>
+  {% endif %}
   {% endfor %}
 </div>
