@@ -39,8 +39,6 @@ function historySetup(e){
   });
 }
 
-
-
 /*
 switcherino - pull content in from the new page on history shit using url
 */
@@ -79,7 +77,6 @@ function switcherino(u){
 /*
 Last.fm pulling
 */
-
 function lastfm(){
   var url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=nitanima&api_key=61a791127993f3fa48d04ba07efa9bd0&format=json" 
   var request = new XMLHttpRequest();
