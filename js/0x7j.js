@@ -9,10 +9,6 @@ if(document.querySelector('html.history')){
   document.querySelector('.history').load = getLinks();
 }
 
-window.addEventListener('popstate', function(event){
-  updateContent
-});
-
 /*
 getLinks - get the valid links to use with html shenanigans
 */
@@ -48,9 +44,9 @@ function historySetup(e){
 /*
 switcherino - pull content in from the new page on history shit using url
 */
-function switcherino(u){ 
+function switcherino(u){
   var request = new XMLHttpRequest();
-  var html; 
+  var html;
   request.open("GET",u,true);
   try{
     request.send(null);

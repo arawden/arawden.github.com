@@ -3,10 +3,11 @@ class: post
 title: Test Post Please Ignore
 layout: default
 date: 2014-10-11
+published: false
 summary: Testin shit and stuff
 ---
 #Test Post Please Ignore#
-So yea just testing out shit  
+So yea just testing out shit
 
 
 > And you will know my name is the LORD when i rain fire down upon thee!  
