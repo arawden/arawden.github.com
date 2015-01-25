@@ -31,7 +31,7 @@ function historySetup(e){
   var bClass = document.querySelector('body').getAttribute('class');
   document.querySelector('body').setAttribute('class', bClass + ' load-out'); // Add class for animations
   setTimeout(function(){
-    switcherino(e.target.getAttribute('href'));
+    switcherino(e.target.getAttribute('href'), e.target.getAttribute('title'));
   }, 1500); // Wait a bit to switch content
   history.pushState(null, e.target.getAttribute('title'), e.target.getAttribute('href')); // update history
   window.addEventListener("popstate", function(e) {
@@ -42,7 +42,7 @@ function historySetup(e){
 /*
 switcherino - pull content in from the new page on history shit using url
 */
-function switcherino(u){
+function switcherino(u,t){
   var request = new XMLHttpRequest();
   var html;
   request.open("GET",u,true);
@@ -62,6 +62,7 @@ function switcherino(u){
       document.querySelector('.content').innerHTML = newcontent; // replace the html from current page with newContent
       bClass = bClass[0].replace(/"/g,''); // Strip the newclass
       document.querySelector('body').setAttribute('class', bClass + ' load-in'); // set new class on body
+      document.title = t + " | Avery Alexander Rawden"; // Set new title
       setTimeout(function(){
         document.querySelector('body').setAttribute('class', bClass);
       }, 1000); // Body animation shit
