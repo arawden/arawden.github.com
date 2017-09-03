@@ -1,4 +1,0 @@
-# Build settings
-markdown: kramdown
-permalink: /blog/:title/
-highlighter: pygments

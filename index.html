@@ -1,22 +1,46 @@
----
-layout: default
-title: Home
-class: home
----
-<div class="name desk-six-tenths portable-one-whole">
-  Avery<br />
-  Alexander<br />
-  Rawden<br />
-</div>
-<div class="person desk-three-tenths portable-one-whole">
-  <ul class="description">
-    <li>Student</li>
-    <li>Designer</li>
-    <li>Developer</li>
-  </ul>
-  <ul class="social nav">
-    <li><a href="http://github.com/arawde" title="Github" class="fa github" data-icon="G"></a></li>
-    <li><a href="http://twitter.com/arawde" title="Twitter" class="fa twitter" data-icon="T"></a></li>
-    <li><a title="Mail" class="fa mail" data-icon="M" onclick="mail()"></a></li>
-  </ul>
-</div>
+<!doctype HTML>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+
+    <title>Avery Rawden</title>
+
+    <script src="https://use.fontawesome.com/56c181bbe2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="./card.css">
+  </head>
+  <body>
+    <div id="card">
+      <img class="avatar" alt="Avatar" src="https://scontent-sjc2-1.cdninstagram.com/t51.2885-19/1517229_801001289993647_1441119905_a.jpg" />
+      <header>
+        <h1>Avery Rawden</h1>
+        <span class="location"><i class="fa fa-map-marker"></i>Vancouver</span>
+      </header>
+      <p>
+        Currently a student and web application developer, aspiring to work for one of the big 5.
+        Interested in distributed systems, API design, and network architecture.
+      </p>
+      <ul class="links">
+        <li>
+          <a href="https://twitter.com/arawde" title="Twitter (@arawde)">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/arawde" title="Github">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <!--
+        <li>
+          <a href="https://github.com/arawde/arawde.github.com/resume.pdf" title="Resume">
+            <i class="fa fa-file-text"></i>
+          </a>
+        </li>
+        -->
+      </ul>
+    </div>
+  </body>
+</html>

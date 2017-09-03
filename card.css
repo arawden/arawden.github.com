@@ -1,0 +1,64 @@
+body{
+  background-color: #e0e0e0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+
+  padding: 1em;
+  margin: 10em auto;
+  width: 480px;
+
+  background-color: #333;
+  color: #fff;
+
+  box-shadow: 3px 3px 5px rgba(0,0,0,.5);
+}
+
+#card .avatar {
+  border-radius: 50%;
+  height: 7em;
+}
+
+#card header {
+  margin-left: 1em;
+}
+#card header h1 {
+  margin-bottom: .3em;
+}
+
+.location i {
+  padding: 0 .3em 0 0;
+}
+
+#card p {
+  border-top: solid 1px #fff;
+
+  padding-top: 1em;
+}
+
+#card .links {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 85%;
+}
+
+.links li {
+  float: left;
+  padding: 0 .2em;
+}
+
+.links a {
+  font-size: 2em;
+  color: #fff;
+  text-decoration: none;
+}
+.links a:hover {
+  color: #eee;
+  cursor: pointer;
+}
