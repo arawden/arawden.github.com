@@ -42,10 +42,10 @@ body{
   padding-top: 1em;
 }
 
-#card .links {
+.links {
   list-style: none;
   padding-left: 0;
-  margin-left: 85%;
+  margin-left: 85%; /* super messy */
 }
 
 .links li {
@@ -61,4 +61,25 @@ body{
 .links a:hover {
   color: #eee;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  #card {
+    width: 90%;
+  }
+  .links {
+    margin-left: 80%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .avatar {
+    display: none;
+  }
+  #card header{
+    margin-left: 0;
+  }
+  .links {
+    margin-left: 70%;
+  }
 }
