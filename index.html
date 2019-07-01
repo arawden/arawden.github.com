@@ -6,45 +6,106 @@
 
     <title>Avery Rawden</title>
 
-    <script src="https://use.fontawesome.com/56c181bbe2.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://use.fontawesome.com/56c181bbe2.js"></script><!-- icons -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"><!-- font -->
 
     <link rel="icon" type="image/ico" href="./favicon.ico">
 
-    <link rel="stylesheet" href="./card.css">
+    <link rel="stylesheet" href="./llc.css">
   </head>
   <body>
-    <div id="card">
-      <img class="avatar" alt="Avatar" src="./avatar.jpg" />
-      <header>
-        <h1>Avery Rawden</h1>
-        <span class="location"><i class="fa fa-map-marker"></i>Vancouver</span>
+    <div class="container">
+      <header class="header">
+        <nav>
+          <ul>
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#school">Education</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+          </ul>
+        </nav>
       </header>
-      <p>
-        Currently a student and web application developer, aspiring to make an impact in financial technology.
-        Interested in distributed systems, API design, networks, and
-        market structure and derivatives.
-      </p>
-      <ul class="links">
-        <!-- If you're looking at this, you might be wondering why I commented this out, and you can
-          easily understand by looking at my twitter and realizing it isn't very professional. Like
-          half of it is dril tweets.
-          <li>
-          <a href="https://twitter.com/arawde" title="Twitter (@arawde)">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>-->
-        <li>
-          <a href="https://github.com/arawde" title="Github">
-            <i class="fa fa-github"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/arawde/arawde.github.com/blob/master/resume.pdf" title="Resume">
-            <i class="fa fa-file-text"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+      <div class="content">
+        <div id="bio" class="card bio">
+          <header>
+            <img class="avatar" alt="Avatar" src="./avatar.jpg" />
+            <div class="whoami">
+              <h1>Avery Rawden</h1>
+              <span class="location"><i class="fa fa-map-marker"></i>Vancouver</span>
+            </div>
+          </header>
+          <p>
+            My name is Avery, and I'm a 24 year old software developer living in Vancouver, BC, CA.
+            I graduated from the University of British Columbia in 2019, with a BA in computer science and a minor in philosophy.
+          </p>
+          <p>
+            I'm primarily interested in the design and construction of distributed systems and the challenges they present.
+            In philosophy, I'm curious about the relationship between how we acquire language and how we acquire ideas. 
+            Outside of my work and studies, I like talking about finance, music, aesthetics, and chess.
+          </p>
+          <ul class="links">
+            <li>
+              <a href="https://twitter.com/sidepocketdev" title="Twitter (@sidepocketdev)">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/arawde" title="Github">
+                <i class="fa fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/avery-rawden-9a5846183/" title="LinkedIn">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <!-- swap resume for linkedin
+            <li>
+              <a href="https://github.com/arawde/arawde.github.com/blob/master/resume.pdf" title="Resume">
+                <i class="fa fa-file-text"></i>
+              </a>
+            </li>
+            -->
+          </ul>
+        </div>
+        <div id="work" class="card work">
+          <header>
+            <h1>Work</h1>
+          </header>
+          <h3>BGC</h3>
+          <p>I will be starting a new position as a full stack developer at
+          <a href="http://bgcengineering.ca" title="BGC">BGC Engineering</a> in May 2019.</p>
+          <h3>OnDemand Solutions</h3>
+          <p>I worked as a full stack developer at OnDemand Solutions from 2015 to 2019. In my role, I focused on constructing
+          APIs which were consumed by web clients built by my colleagues. In the process, I learned about new features in ES6, some of the
+          fundamentals of web development in Go, and worked with Postgres and MS SQL.</p>
+        </div>
+        <div id="school" class="card school">
+          <header>
+            <h1>Education</h1>
+          </header>
+          <br />
+          <p>I graduated from the University of British Columbia in 2019 with a BA in Computer Science and a minor in philosophy</p>
+          <p>I started at UBC in the Arts faculty, intending to study economics. I found it wasn't for me, and switched to computer
+          science, since I had prior experience from high school. I focused on language design, networking, and distributed systems
+          in classes outside of the core data structures, algorithms, and hardware curriculum.</p>
+          <p>My dive into philosophy began in second year, with a class on philosophy of literature. I went on to take classes on topics
+          from language, to art, to religion, and existentialism.</p>
+        </div>
+        <div id="hobbies" class="card hobbies">
+          <header>
+            <h1>Hobbies</h1>
+          </header>
+          <br />
+          <p>When I'm not working, I have a few things which I enjoy spending my time doing. My primary interest is finance - I love reading about it,
+          I love talking about it, and I like participating in it. My favorite financial column to read is <a href="https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine">Matt Levine's</a> <a href="http://link.mail.bloombergbusiness.com/join/4wm/moneystuff-signup&hash=54223001ca3ffcf40f2629c25acea67a">Money Stuff</a>, which does an amazing job of exploring the intricacies of modern financial markets.</p>
+          <p>While I'm at my computer, I'll occasionally play video games with my friends, but I also like to play chess. I started playing when
+          I was in elementary school, with my father teaching me. During middle school, I was in my school's chess club. I stopped playing in high
+          school, when video games became a more prominent part of my life, but I have since started playing again. You can <a href="https://lichess.org/@/arawde">challenge me to a game on Lichess</a> if you want!</p>
+          <p>My last big interest is music. I'm the sort of person who really doesn't like to have quiet in my life, and music is also one of the ways
+          that I deal with some of the frustrations of every day life. As a result, I've recently started playing guitar. In addition, my recent re-introduction to the electronic music scene has inspired me to start making rudimentary DJ sets on my computer. It's hard for me to articulate what electronic music I like, so it's probably best if you just <a href="https://www.youtube.com/playlist?list=PLBCfjOgXPjE-kq2V3H_5XwEmyIuWvurQi">check out a small collection of DJ sets</a> that I've started to compile recently.</p>
+        </div>
+      </div>
+    <script src="./llc.js"></script>
   </body>
 </html>
