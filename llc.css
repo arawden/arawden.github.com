@@ -1,4 +1,8 @@
-body{
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   background-color: #e0e0e0;
 
   font-family: "Roboto", sans-serif;
@@ -11,13 +15,9 @@ body{
   /* fix header covering content when using url fragments */
   scroll-padding-top: 64px;
 }
-
-body a:visited {
-  color: inherit;
-}
-
 .container {
   margin: 0 auto;
+  padding-bottom: 96px;
   width: 64%;
 }
 
@@ -50,9 +50,14 @@ body a:visited {
   text-decoration: none;
 }
 
-.header a:hover, .header a:active {
+.header a:hover, .header a:active, .header a.active {
   color: rgb(0,0,0);
 }
+
+.content a:visited {
+  color: inherit;
+}
+
 
 /* card generic */
 .card {
@@ -150,6 +155,13 @@ body a:visited {
 
 .work a:hover, .hobbies a:hover {
   color: rgba(255,255,255,.7);
+}
+
+footer {
+  margin-top: 96px;
+
+  color: rgb(128,128,128);
+  text-align: center;
 }
 
 /* responsive breakpoints */
