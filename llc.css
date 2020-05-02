@@ -12,9 +12,8 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  /* fix header covering content when using url fragments */
-  scroll-padding-top: 64px;
 }
+
 .container {
   margin: 0 auto;
   padding-bottom: 96px;
@@ -67,6 +66,8 @@ body {
 
   padding: 1em;
   margin: 1em auto 2em;
+
+  scroll-margin-top: 64px;
 
   background-color: #333;
   color: #eee;
