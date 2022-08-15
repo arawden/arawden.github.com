@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: rgb(244,244,244);
 
@@ -15,7 +11,7 @@ body {
   max-width: 800px;
 }
 
-.bio p:first-of-type {
+.bio p:first-of-type, .networks p:first-of-type {
   margin-top: 1em;
 }
 
@@ -40,31 +36,18 @@ body {
   margin-bottom: 0.2em;
 }
 
-.bio .whoami .location i {
-  padding: 0 0.4em 0 0;
-}
-
 .networks {
-  padding-top: 12px;
-
   border-top: 1px solid rgb(0,0,0, 0.19)
 }
 
-.networks .links {
-  padding: 0;
+.networks a {
+  display: inherit;
+  padding-bottom: 6px;
 
-  list-style: none;
-}
-
-.networks .links li {
-  padding-bottom: 8px;
-}
-
-.networks .links a {
   color: rgba(48, 48, 48, 0.8);
 }
 
-.networks .links a:hover {
+.networks a:hover {
   color: rgba(64, 64, 64, 0.4);
 }
 
@@ -79,25 +62,18 @@ body {
   .container {
     width: 96%;
   }
+
+  .avatar {
+    display: none;
+  }
+
+  .bio header {
+    grid-template-columns: inherit;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .container {
     width: 90%;
   }
-  /*.links {
-    margin-left: 80%;
-  }*/
-}
-
-@media screen and (max-width: 400px) {
-  .avatar {
-    display: none;
-  }
-  #card header {
-    margin-left: 0;
-  }
-  /*.links {
-    margin-left: 70%;
-  }*/
 }
