@@ -18,7 +18,7 @@ body {
 .bio header {
   display: grid;
   grid-template-columns: min-content 1fr;
-  
+
   padding: 0 0 1em;
 
   border-bottom: 1px solid rgb(0,0,0,0.18)
@@ -40,10 +40,12 @@ body {
   border-top: 1px solid rgb(0,0,0, 0.19)
 }
 
-.networks a {
+.networks > * {
   display: inherit;
   padding-bottom: 6px;
+}
 
+.networks a {
   color: rgba(48, 48, 48, 0.8);
 }
 
